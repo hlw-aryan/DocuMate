@@ -7,7 +7,22 @@ DocuMate is a tool that allows users to interactively query information from mul
 - **Document Upload**: Users can upload documents (PDFs) containing textual information.
 - **Natural Language Query**: Users can ask questions in natural language.
 - **Interactive Chat Interface**: Responses to user queries are displayed in an interactive chat interface.
+- **Memory**: The bot retains chat history to provide contextually relevant responses during the conversation.
 - **Reset Functionality**: Users can reset the uploaded documents and conversation history.
+
+## Screenshots
+
+### Interface
+![Interface](https://github.com/hlw-aryan/DocuMate/assets/134946530/76262f93-ba02-4d36-a416-77632d78bf85)
+
+### QnA
+![QnA](https://github.com/hlw-aryan/DocuMate/assets/134946530/aadcf654-4a79-4cb2-b2fc-18b6fe34ecac)
+
+## Future Prospects
+
+- **Source Attribution**: Enhance the bot’s responses by including references to the specific parts of the uploaded document from which the current answer was derived. This will improve transparency and trustworthiness.
+- **Support for Multiple Document Formats**: Expand the bot’s capabilities to handle a variety of document formats, including .txt, .doc, and .csv files, allowing users to upload and query diverse types of data.
+- **Integration with Online Resources**: Enable the bot to use online hyperlinks as data sources, facilitating real-time access to updated and relevant information from the web.
 
 ## Installation
 
