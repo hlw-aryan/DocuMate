@@ -9,7 +9,7 @@ def uploadFile(uploadedFiles):
         fileName = uploadedFile.name[:-4]  # Remove file extension
         files = {"file": uploadedFile.getvalue()}
         data = {"fileName": fileName}
-        response = requests.post("http://localhost:8000/upload/", files=files, data=data)
+        response = requests.post("https://documate-api.onrender.com/upload/", files=files, data=data)
         if response.status_code == 200:
             st.write(f"File {fileName} uploaded successfully!")
         else:
@@ -17,7 +17,7 @@ def uploadFile(uploadedFiles):
 
 # Function to reset the server environment
 def resetEnvironment():
-    response = requests.post("http://localhost:8000/reset/")
+    response = requests.post("https://documate-api.onrender.com/reset/")
     if response.status_code == 200:
         st.session_state.userQuestion = ""
         st.session_state.uploadedFiles = []
@@ -28,7 +28,7 @@ def resetEnvironment():
 # Function to process user queries
 def queryProcess(userQuestion):
     params = {"userQuery": userQuestion}
-    response = requests.get("http://localhost:8000/query/", params=params)
+    response = requests.get("https://documate-api.onrender.com/query/", params=params)
     st.session_state.userQuestion = ""
 
     if response.status_code == 200:
